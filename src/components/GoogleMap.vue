@@ -8,7 +8,7 @@
             map-type-id="roadmap"
             style="width: 1000px; height: 600px"
         >
-            <!-- <gmap-polyline 
+            <gmap-polyline 
                 v-for="path in route"
                 :key="path[0][0]"
                 :path="path" 
@@ -16,7 +16,7 @@
                 @path_changed="updateEdited($event)"
                 ref="polyline"
             >
-            </gmap-polyline> -->
+            </gmap-polyline>
         </gmap-map>
         <div>
         </div>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import stepsData from './steps';
+import stepsData from './steps.json';
 import polyline from '@mapbox/polyline';
 
 export default {
@@ -47,7 +47,6 @@ export default {
         })
     },
     mounted() {
-        console.log(stepsData())
         stepsData.map(step => {
             return this.route = [...this.route, ...polyline.decode(step.polyline.points)];
         })
