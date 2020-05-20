@@ -17,14 +17,10 @@
         ref="polyline"
       ></gmap-polyline>
     </gmap-map>
-    <div></div>
   </div>
 </template>
 
 <script>
-import googleResponse from "./googleResponse.json";
-import polyline from "@mapbox/polyline";
-
 export default {
   name: "GoogleMap.vue",
   data() {
@@ -33,9 +29,12 @@ export default {
         lat: 0,
         lng: 0,
       },
-      route: [],
-      steps: [],
     };
+  },
+  props: {
+    route: {
+      type: Array,
+    },
   },
   created() {
     window.navigator.geolocation.getCurrentPosition(position => {
@@ -43,29 +42,6 @@ export default {
       this.myPosition.lat = latitude;
       this.myPosition.lng = longitude;
     });
-  },
-  mounted() {
-    this.route = polyline.decode(
-      googleResponse.routes[0].overview_polyline.points
-    );
-
-    let newRoute = [];
-    for (let i = 0; i < this.route.length - 1; i += 1) {
-      if (i) {
-        const path = [
-          {
-            lat: this.route[i][0],
-            lng: this.route[i][1],
-          },
-          {
-            lat: this.route[i + 1][0],
-            lng: this.route[i + 1][1],
-          },
-        ];
-        newRoute = [...newRoute, path];
-      }
-    }
-    this.route = newRoute;
   },
 };
 </script>

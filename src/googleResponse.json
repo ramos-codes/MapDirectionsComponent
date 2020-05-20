@@ -1,0 +1,204 @@
+{
+  "geocoded_waypoints": [
+    {
+      "geocoder_status": "OK",
+      "place_id": "ChIJabUuDImAhYAROoHGKz5XFPA",
+      "types": ["premise"]
+    },
+    {
+      "geocoder_status": "OK",
+      "place_id": "ChIJD4XqblOHhYARtdKnbSXWBCw",
+      "types": ["premise"]
+    }
+  ],
+  "routes": [
+    {
+      "bounds": {
+        "northeast": {
+          "lat": 37.7915062,
+          "lng": -122.404808
+        },
+        "southwest": {
+          "lat": 37.7688497,
+          "lng": -122.4485891
+        }
+      },
+      "copyrights": "Map data ©2020 Google",
+      "legs": [
+        {
+          "distance": {
+            "text": "3.8 mi",
+            "value": 6173
+          },
+          "duration": {
+            "text": "17 mins",
+            "value": 1039
+          },
+          "end_address": "1501 Waller St, San Francisco, CA 94117, USA",
+          "end_location": {
+            "lat": 37.7688497,
+            "lng": -122.4485891
+          },
+          "start_address": "256 Grant Ave, San Francisco, CA 94108, USA",
+          "start_location": {
+            "lat": 37.7897171,
+            "lng": -122.404808
+          },
+          "steps": [
+            {
+              "distance": {
+                "text": "184 ft",
+                "value": 56
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 16
+              },
+              "end_location": {
+                "lat": 37.789635,
+                "lng": -122.4054387
+              },
+              "html_instructions": "Head <b>west</b> on <b>Sutter St</b> toward <b>Grant Ave</b>",
+              "polyline": {
+                "points": "wxseF`ebjVP|B"
+              },
+              "start_location": {
+                "lat": 37.7897171,
+                "lng": -122.404808
+              },
+              "travel_mode": "DRIVING"
+            },
+            {
+              "distance": {
+                "text": "0.1 mi",
+                "value": 215
+              },
+              "duration": {
+                "text": "2 mins",
+                "value": 100
+              },
+              "end_location": {
+                "lat": 37.7915062,
+                "lng": -122.4057618
+              },
+              "html_instructions": "Turn <b>right</b> at the 1st cross street onto <b>Grant Ave</b>",
+              "maneuver": "turn-right",
+              "polyline": {
+                "points": "exseF~hbjVc@Dc@FUBgANSBAKG@[DG@[Bm@Hc@Da@F"
+              },
+              "start_location": {
+                "lat": 37.789635,
+                "lng": -122.4054387
+              },
+              "travel_mode": "DRIVING"
+            },
+            {
+              "distance": {
+                "text": "2.3 mi",
+                "value": 3638
+              },
+              "duration": {
+                "text": "9 mins",
+                "value": 526
+              },
+              "end_location": {
+                "lat": 37.7863089,
+                "lng": -122.4466332
+              },
+              "html_instructions": "Turn <b>left</b> onto <b>Pine St</b>",
+              "maneuver": "turn-left",
+              "polyline": {
+                "points": "}cteF~jbjVBT@V@TBTNfCDl@BRB\\?FDj@Dl@Dj@@TLxBBf@BTDn@N`CDj@Bh@?@Dj@FjA`@vFF~@@HDr@Fv@@P?B@BF|@Fz@FjAHpAVjDB`@Dj@HxADl@Dj@Dl@@XDj@@NBV@PDf@Dl@Dr@Dh@Bl@JxATpDF~@BP@LDt@LxAJxADj@@J@PBf@Dl@@BNdC?BDh@?BDh@B^@V@TLvAJrBDj@NfCDj@PtCDl@\\~EFz@Bn@PdCPpCFz@TrDDj@Dl@Dj@Dl@FhAB\\JxADj@Dj@Dl@TrD?@Fx@Dl@Dp@HhARzCPtCDj@LrBBRJxABj@@FTvDBPJ~AZ~EF|@Df@?DPdCBl@Dj@Dl@Dj@VrDDx@Dj@Dl@NdCDl@@J"
+              },
+              "start_location": {
+                "lat": 37.7915062,
+                "lng": -122.4057618
+              },
+              "travel_mode": "DRIVING"
+            },
+            {
+              "distance": {
+                "text": "374 ft",
+                "value": 114
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 12
+              },
+              "end_location": {
+                "lat": 37.7855436,
+                "lng": -122.4474733
+              },
+              "html_instructions": "Continue onto <b>Masonic Ave</b>",
+              "polyline": {
+                "points": "mcseFljjjVL\\?@@BBBLPDDHFfB~A"
+              },
+              "start_location": {
+                "lat": 37.7863089,
+                "lng": -122.4466332
+              },
+              "travel_mode": "DRIVING"
+            },
+            {
+              "distance": {
+                "text": "1.1 mi",
+                "value": 1843
+              },
+              "duration": {
+                "text": "5 mins",
+                "value": 327
+              },
+              "end_location": {
+                "lat": 37.7692928,
+                "lng": -122.4451456
+              },
+              "html_instructions": "Keep <b>left</b> to stay on <b>Masonic Ave</b>",
+              "maneuver": "keep-left",
+              "polyline": {
+                "points": "s~reFtojjVDBDBJFBBDBB@DBB@F?@@FARCRC\\Eh@GbBUZE`@GnAOx@KNCH?@AH?F?B?D?F?F@D@F@@?NDPRf@VNFp@Pn@NZDN?LAL?x@KF@b@GjAQv@KLCZCB?fBSNAp@KzAQLCb@EhBUp@IFAnC]`@ELARCJAhBSb@Gt@Mv@IhAMlAMl@I~@I\\EDAlAOj@I^EVQpAQfAMZEb@G|BYNAb@GdAM~@K`@Gf@G^Gj@Ib@I"
+              },
+              "start_location": {
+                "lat": 37.7855436,
+                "lng": -122.4474733
+              },
+              "travel_mode": "DRIVING"
+            },
+            {
+              "distance": {
+                "text": "0.2 mi",
+                "value": 307
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 58
+              },
+              "end_location": {
+                "lat": 37.7688497,
+                "lng": -122.4485891
+              },
+              "html_instructions": "Turn <b>right</b> onto <b>Waller St</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+              "maneuver": "turn-right",
+              "polyline": {
+                "points": "ayoeFdajjVR~CRbDT`DTdDBb@"
+              },
+              "start_location": {
+                "lat": 37.7692928,
+                "lng": -122.4451456
+              },
+              "travel_mode": "DRIVING"
+            }
+          ],
+          "traffic_speed_entry": [],
+          "via_waypoint": []
+        }
+      ],
+      "overview_polyline": {
+        "points": "wxseF`ebjVP|Bc@Dc@F}ARSBAKc@Fc@DqANa@FBTBl@R|CLfBn@bKpAhSb@hGjBnYZdFb@pGr@hKrBb\\nHtiA|Cpe@\\lFRf@RVpBfBZRRJd@CfKqAd@EX?VDNDPRv@^`B`@j@DZA`AItDi@vCYrNgBnAMbEi@nLqAjAOVQpAQbBS`Da@xDc@tCa@b@If@bIn@jJ"
+      },
+      "summary": "Pine St and Masonic Ave",
+      "warnings": [],
+      "waypoint_order": []
+    }
+  ],
+  "status": "OK"
+}
