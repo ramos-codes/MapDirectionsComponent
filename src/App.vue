@@ -1,85 +1,60 @@
 <template>
-  <div class="App">
-    <GoogleMap :route="route" />
-    <DirectionsList
-      :html_steps="html_steps"
-      :distance="distance"
-      :duration="duration"
-      :destination="destination"
-    />
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
+
+        <v-img
+          alt="Vuetify Name"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="100"
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+          width="100"
+        />
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+        text
+      >
+        <span class="mr-2">Latest Release</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-// Dependencies
-import googleResponse from "./googleResponse.json";
-import polyline from "@mapbox/polyline";
-// Components
-import GoogleMap from "./components/GoogleMap";
-import DirectionsList from "./components/DirectionsList";
+import HelloWorld from './components/HelloWorld';
 
 export default {
-  name: "App",
+  name: 'App',
+
   components: {
-    GoogleMap,
-    DirectionsList,
+    HelloWorld,
   },
-  data() {
-    return {
-      myPosition: {
-        lat: 0,
-        lng: 0,
-      },
-      route: [],
-      html_steps: [],
-      distance: "",
-      duration: "",
-      destination: "",
-    };
-  },
-  mounted() {
-    this.route = polyline.decode(
-      googleResponse.routes[0].overview_polyline.points
-    );
 
-    let newRoute = [];
-    for (let i = 0; i < this.route.length - 1; i += 1) {
-      if (i) {
-        const path = [
-          {
-            lat: this.route[i][0],
-            lng: this.route[i][1],
-          },
-          {
-            lat: this.route[i + 1][0],
-            lng: this.route[i + 1][1],
-          },
-        ];
-        newRoute = [...newRoute, path];
-      }
-    }
-    this.route = newRoute;
-
-    this.distance = googleResponse.routes[0].legs[0].distance.text;
-    this.duration = googleResponse.routes[0].legs[0].duration.text;
-    this.destination = googleResponse.routes[0].legs[0].end_address;
-
-    googleResponse.routes[0].legs[0].steps.map(step => {
-      this.html_steps = [...this.html_steps, step.html_instructions];
-    });
-  },
+  data: () => ({
+    //
+  }),
 };
 </script>
-
-<style>
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.App {
-  width: 100vw;
-  height: 100vh;
-}
-</style>
